@@ -16,11 +16,14 @@
     </mat-card-content>
 
     <mat-card-actions>
-      <button mat-button color="warn" [routerLink]="['/heroes', heroe.id ]">
-        Leer más...
-      </button>
 
-      <button mat-button color="info" [routerLink]="['/heroes/editar', heroe.id ]">
+      <a mat-button [routerLink]="['/heroes', heroe.id ]">Leer más...</a>
+
+
+      <button mat-raised-button color="accent" [routerLink]="['/heroes/editar', heroe.id ]">
+        <span class="material-icons">
+          edit
+        </span>
         Editar
       </button>
     </mat-card-actions>
